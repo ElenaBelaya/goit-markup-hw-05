@@ -42,7 +42,7 @@
   <main>
   <section class="hero-box">
           <h1 class="hero-title">Эффективные решения</br>для вашего бизнеса</h1>
-          <button type="button" class="btn">Заказать услугу</button>            
+          <button data-modal-open type="button" class="btn">Заказать услугу</button>            
   </section>
   <section class="section section-dignity">
       <!--Наши достоинства-->
@@ -119,42 +119,42 @@
     <div class="container">
       <h2 class="container-name">Наша команда</h2>
       <ul class="container-list">
-          <li class="item"><img src="./images/photo1.jpg" class="team-member-img" alt="Игорь Демьяненко" width="270">
-            <div class="team-member">
-            <h3 class="team-member-name">Игорь Демьяненко</h3>
-            <p class="team-member-position">Frontend Developer</p>
-            <ul class="social-links">
-              <li class="social-list-item">
-                <a href="" class="social-link">
-                  <svg class="social-links-icon" width="20px" height="20px">
-                    <use href="images/icons.svg#icon-instagram-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-link">
-                  <svg class="social-links-icon" width="20" height="20">
-                    <use href="images/icons.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-link">
-                  <svg class="social-links-icon" width="20" height="20">
-                    <use href="images/icons.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a href="" class="social-link">
-                  <svg class="social-links-icon" width="20" height="20">
-                    <use href="images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>          
-          </li>
+        <li class="item"><img src="./images/photo1.jpg" class="team-member-img" alt="Игорь Демьяненко" width="270">
+         <div class="team-member">
+          <h3 class="team-member-name">Игорь Демьяненко</h3>
+          <p class="team-member-position">Frontend Developer</p>
+           <ul class="social-links">
+            <li class="social-list-item">
+             <a href="" class="social-link">
+             <svg class="social-links-icon" width="20px" height="20px">
+             <use href="images/icons.svg#icon-instagram-2"></use>
+             </svg>
+             </a>
+             </li>
+            <li class="social-list-item">
+             <a href="" class="social-link">
+             <svg class="social-links-icon" width="20" height="20">
+             <use href="images/icons.svg#icon-twitter-1"></use>
+             </svg>
+             </a>
+             </li>
+            <li class="social-list-item">
+             <a href="" class="social-link">
+             <svg class="social-links-icon" width="20" height="20">
+             <use href="images/icons.svg#icon-facebook-1"></use>
+             </svg>
+             </a>
+             </li>
+            <li class="social-list-item">
+             <a href="" class="social-link">
+             <svg class="social-links-icon" width="20" height="20">
+             <use href="images/icons.svg#icon-linkedin-1"></use>
+             </svg>
+             </a>
+             </li>
+           </ul>
+         </div>          
+        </li>
         <li class="item"><img src="./images/photo2.jpg" class="team-member-img" alt="Ольга Репина" width="270">
           <div class="team-member">
             <h3 class="team-member-name">Ольга Репина</h3>
@@ -365,7 +365,14 @@
       </div>
     </div>
   </footer>
-  
 
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <p></p>
+      <button data-modal-close>x</button>
+
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
